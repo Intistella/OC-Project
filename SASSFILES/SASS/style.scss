@@ -106,12 +106,9 @@ body{
                     font-weight: 500; 
                     width: 211px;
                 }
-                .purple_item{
-                    color: $purple;
-                }
                 .grey_item{
                     color: #7E7E7E;
-                }    
+                }   
             }    
             .number{
                 display: flex;
@@ -170,6 +167,7 @@ body{
                 }
                 .card{
                     display: flex;
+                    flex-direction: column;
                     width: 100%;
                     background-color: #FFFFFF;
                     border: 1px solid #FFFFFF;
@@ -201,8 +199,10 @@ body{
                             }
                             .fa-heart{
                                 color: #000;
-                                font-family: "font Awesome 6 Free";
-                                
+                                font-family: "font Awesome 6 Free"; 
+                                border: none;   
+                                background: none;
+                                line-height: 27px;
                             }
                         }
                         .card__text{

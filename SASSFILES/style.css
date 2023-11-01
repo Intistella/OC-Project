@@ -108,9 +108,6 @@ body {
   font-weight: 500;
   width: 211px;
 }
-.fct .fct_list .grey_border .fct_items .purple_item {
-  color: #9356DC;
-}
 .fct .fct_list .grey_border .fct_items .grey_item {
   color: #7E7E7E;
 }
@@ -170,6 +167,7 @@ body {
 }
 .resto .resto_cards .card {
   display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: #FFFFFF;
   border: 1px solid #FFFFFF;
@@ -205,6 +203,9 @@ body {
 .resto .resto_cards .card .card__content .cardtitle__section .fa-heart {
   color: #000;
   font-family: "font Awesome 6 Free";
+  border: none;
+  background: none;
+  line-height: 27px;
 }
 .resto .resto_cards .card .card__content .card__text {
   font-size: 17px;
