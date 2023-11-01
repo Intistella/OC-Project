@@ -20,7 +20,6 @@ body {
   display: flex;
   justify-content: center;
   padding: 14px 0.5px 13px 0;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .logo .logo_image {
   width: 44%;

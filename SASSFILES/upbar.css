@@ -1,0 +1,33 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  max-width: 767px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.upbar {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  padding: 14px 0.5px 13px 17px;
+  align-items: center;
+}
+.upbar .previous {
+  color: #000;
+}
+.upbar .logo {
+  width: 44%;
+  padding: 0 19px 0 16px;
+}
+
+.logo_image {
+  width: 100%;
+}
+
+/*# sourceMappingURL=upbar.css.map */
