@@ -3,103 +3,123 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ohmyfood</title>
+    <title>Menu à la française</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-   </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200&family=Montserrat:ital,wght@0,200;0,400;0,600;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200&family=Montserrat:ital,wght@0,200;0,400;0,600;1,400&family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../SASSFILES/style-alafrancaise.css">
+</head>
 
 <body>
     <header>
-        <a href="index.html">
-            <i class="fa-solid fa-arrow-left"></i>
-        </a>
-        <img src="Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+        <span class="upbar">
+            <a href="../index.html">
+                <i class="previous fa-sharp fa-solid fa-arrow-left fa-lg"></i>
+            </a>
+            <img class="logo" src="../Images et textes Ohmyfood/images/logo/ohmyfood.png">
+        </span>
+        <img class="logo_image" src="../Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
     </header>
-    <main>
-        <img src="Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
-        <div>
-            <section>
-                <h1>À la française</h1>
-                <span><i class="fa-thin fa-heart"></i></span>
-                <h2>Entrées</h2>
-                <div>
-                    <a href="#">
-                        <div>
-                            <h3>Tartare de poulpe acidulé</h3>
-                            <p>Aux zestes d'orange<span class="euro">25€</span></p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div>
-                            <h3>Velouté de légumes d'antan</h3>
-                            <p>Carotte, panais, topinambour<span class="euro">35€</span></p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div>
-                            <h3>Soupe à l'oignon</h3>
-                            <p>Revisitée<span class="euro">20€</span></p>
-                        </div>
-                    </a>
-                </div>
-                <h2>Plats</h2>
-                <div>
-                    <a href="#">
-                            <div>
-                                <h3>Noix de coquilles Saint-Jacques</h3>
-                                <p>Accompagnées d'une purée de panais<span class="euro">40€</span></p>
-                            </div>
-                    </a>
-                    <a href="#">
-                        <div>
-                            <h3>Magret de canard</h3>
-                            <p>Et parmentier de pommes de terre<span class="euro">35€</span></p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div>
-                            <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                            <p>Sur son lit de gnocchis aux légumes<span class="euro">44€</span></p>
-                        </div>
-                    </a>
-                </div>
-                <h2>Desserts</h2>
-                <div>
-                    <a href="#">
-                            <div>
-                                <h3>Pétales de violettes glacés</h3>
-                                <p>Et purée de noisettes<span class="euro">18€</span></p>
-                            </div>
-                    </a>
-                    <a href="#">
-                        <div>
-                            <h3>Fondant au chocolat</h3>
-                            <p>Revisité<span class="euro">22€</span></p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div>
-                            <h3>Millefeuille croustillant</h3>
-                            <p>Myrtilles et pâte d’amande<span class="euro">23€</span></p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-        </div>
-        <input type="button" value="Commander">
+    <main>   
+        <section class="menu">
+            <div class="menu__name">
+                <h1 class="menu__title">À la française</h1>
+                <input class="fa-input fa-heart fa-lg" type="submit" value="&#xf004;">
+            </div>    
+            <div class="menu__cat">
+                <h2 class="menu__cat-title">Entrées</h2>
+                <a href="#">
+                    <div class="menu__cat-content">
+                        <h3 class="menu__cat-subtitle">Tartare de poulpe acidulé</h3>
+                        <p class="menu__cat-text">Aux zestes d'orange<span class="euro">25€</span></p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="menu__cat-content">
+                        <h3 class="menu__cat-subtitle">Velouté de légumes d'antan</h3>
+                        <p class="menu__cat-text">Carotte, panais, topinambour<span class="euro">35€</span></p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="menu__cat-content">
+                        <h3 class="menu__cat-subtitle">Soupe à l'oignon</h3>
+                        <p class="menu__cat-text">Revisitée<span class="euro">20€</span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="menu__cat">
+                <h2 class="menu__cat-title">Plats</h2>
+                <a href="#">
+                    <div class="menu__cat-content">
+                        <h3 class="menu__cat-subtitle">Noix de coquilles Saint-Jacques</h3>
+                        <p class="menu__cat-text">Accompagnées d'une purée de panais<span class="euro">40€</span></p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="menu__cat-content">
+                        <h3 class="menu__cat-subtitle">Magret de canard</h3>
+                        <p class="menu__cat-text">Et parmentier de pommes de terre<span class="euro">35€</span></p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="menu__cat-content">
+                        <h3 class="menu__cat-subtitle">Pigeonneau d’Ille-et-Vilaine</h3>
+                        <p class="menu__cat-text">Sur son lit de gnocchis aux légumes<span class="euro">44€</span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="menu__cat">
+                <h2 class="menu__cat-title">Desserts</h2>
+                <a href="#">
+                    <div class="menu__cat-content">
+                        <h3 class="menu__cat-subtitle">Pétales de violettes glacés</h3>
+                        <p class="menu__cat-text">Et purée de noisettes<span class="euro">18€</span></p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="menu__cat-content">
+                        <h3 class="menu__cat-subtitle">Fondant au chocolat</h3>
+                        <p class="menu__cat-text">Revisité<span class="euro">22€</span></p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="menu__cat-content">
+                        <h3 class="menu__cat-subtitle">Millefeuille croustillant</h3>
+                        <p class="menu__cat-text">Myrtilles et pâte d’amande<span class="euro">23€</span></p>
+                    </div>
+                </a>
+            </div>
+            <span class="input">
+                <input class="input__btn" type="button" value="Commander">
+            </span>
+         </section>
     </main>
     <footer>
-        <div>
-            <img src="Images et textes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="">
-            <a href="">
-                <i class="fa-solid fa-utensils"></i>
-                Proposer un restaurant
-            </a>
-            <a href="">
-                <i class="fa-solid fa-handshake-angle"></i>
-                Devenir partenaire
-            </a>
-            <a href="">Mentions légales</a>
-            <a href="">Contact</a>
+        <div class="footer__section">
+            <img src="../Images et textes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+            <div class="footer__links">
+                <article class="footer__linkscont">
+                    <i class="fa-solid fa-utensils fa-4xs"></i>
+                    <a class="footer__text" href="">
+                        Proposer un restaurant      
+                    </a>
+                </article> 
+                <article class="footer__linkscont">
+                    <i class="fa-solid fa-handshake-angle "></i>
+                    <a class="footer__text">
+                        Devenir partenaire</span>
+                    </a>
+                </article>
+                <a class="footer__text" href="">Mentions légales</a>
+                <a class="footer__text" href="">Contact</a>
+            </div>
         </div>
     </footer>
 </body>
