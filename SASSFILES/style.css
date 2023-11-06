@@ -72,6 +72,8 @@ body {
   justify-content: center;
 }
 .intro .intro_btn .btn {
+  font-size: 16px;
+  font-weight: 500;
   width: 218px;
   height: 50px;
   border-radius: 25px;
@@ -79,6 +81,9 @@ body {
   border: none;
   color: #FFFFFF;
   box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.25);
+}
+.intro .intro_btn .btn:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
 .fct {
@@ -119,6 +124,9 @@ body {
 }
 .fct .fct_list .grey_border .fct_items .grey_item {
   color: #7E7E7E;
+}
+.fct .fct_list .grey_border .fct_items .grey_item:hover {
+  color: #9356DC;
 }
 .fct .fct_list .grey_border .number {
   display: flex;
@@ -167,12 +175,12 @@ body {
   position: absolute;
 }
 .resto .resto_cards .first {
-  top: 938;
-  left: 250px;
+  top: 950px;
+  right: 7%;
 }
 .resto .resto_cards .second {
-  top: 1290;
-  left: 250px;
+  top: 1307px;
+  right: 7%;
 }
 .resto .resto_cards .card {
   display: flex;
@@ -180,7 +188,7 @@ body {
   width: 100%;
   background-color: #FFFFFF;
   border: 1px solid #FFFFFF;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .resto .resto_cards .card a {
   width: 100%;
@@ -190,8 +198,8 @@ body {
   width: 100%;
   height: 231px;
   object-fit: cover;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 .resto .resto_cards .card .card__content {
   margin: 13px 13px 12px 13px;
@@ -215,8 +223,19 @@ body {
   border: none;
   background: none;
   line-height: 27px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
 }
-.resto .resto_cards .card .card__content .card__text {
+.resto .resto_cards .card .card__content .cardtitle__section .fa-heart:hover {
+  background-image: linear-gradient(to bottom, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
+  -webkit-text-stroke-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.resto .resto_cards .card .card__content .cardtitle__section .card__text {
   font-size: 17px;
   font-weight: 300;
   color: #000;
