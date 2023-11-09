@@ -88,6 +88,7 @@ main {
 }
 .menu .menu__name .fa-heart {
   color: #000;
+  cursor: pointer;
   font-family: "font Awesome 6 Free";
   border: none;
   background: none;
@@ -96,7 +97,7 @@ main {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
 }
-.menu .menu__name .fa-heart:hover {
+.menu .menu__name .fa-heart:focus {
   background-image: linear-gradient(to bottom, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
   -webkit-text-stroke-color: transparent;
   -webkit-background-clip: text;
@@ -121,10 +122,8 @@ main {
 }
 .menu .menu__cat .menu__cat-content {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
+  flex-direction: row;
   margin-top: 12px;
-  padding: 15px;
   border: 1px solid #fff;
   background-color: #fff;
   border-radius: 15px;
@@ -148,11 +147,32 @@ main {
   color: #353535;
   font-weight: 700;
 }
-.menu .input {
+.menu .menu__cat .menu__cat-content .menu__cat-visible {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+}
+.menu .menu__cat .menu__cat-content .menu__order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  background-color: #99E2D0;
+  margin: 0;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  color: #FFFFFF;
+}
+.menu .cta {
   display: flex;
   justify-content: center;
 }
-.menu .input .input__btn {
+.menu .cta__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   width: 186px;
   height: 50px;
