@@ -61,12 +61,14 @@ main{
             text-decoration: none;
         }
         .menu__cat-content{
+            position: relative;
             display: flex;
             flex-direction: row;
             margin-top: 12px;  
             border: 1px solid #fff;
             background-color: #fff;
             border-radius: 15px;
+            padding: 15px;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
             .menu__cat-subtitle{
                 font-size: 18px;
@@ -81,17 +83,16 @@ main{
                 margin: 0;
                 display: flex;
                 justify-content: space-between;
-                .euro{
-                    color: #353535;
-                    font-weight: 700;
-                }
+            }
+            .euro{ 
+                color: #353535;
+                font-weight: 700;
             }
             .menu__cat-visible{
                 width: 100%;
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
-                padding: 15px;
             }
             .menu__order{
                 display: flex;
@@ -99,11 +100,39 @@ main{
                 align-items: center;
                 width: 59px;
                 background-color: #99E2D0;
-                margin: 0;
+                margin: -15px;
                 border-bottom-right-radius: 15px;
                 border-top-right-radius: 15px;  
                 color: #FFFFFF;
+                transition: transform 2s;  
             }
+        }    
+    }
+
+    .entrees{
+        transition: transform;
+        transform: scale(0);
+        animation: onset 4s linear forwards;
+    }
+    .plats{
+        transition: transform;
+        transform: scale(0);
+        animation: onset 4s linear forwards 4s;
+    }
+    .desserts{
+        transition: transform;
+        transform: scale(0);
+        animation: onset 4s linear forwards 8s;
+    }
+    @keyframes onset {
+        from{
+            transform: scale(0);
+        }
+        50%{
+            transform: scale(0.5);
+        }
+        to{
+            transform: scale(1);
         }
     }
       
