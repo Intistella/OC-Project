@@ -1,0 +1,73 @@
+$grey: #F6F6F6;
+$purple: #9356DC;
+@keyframes onset {
+    from{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes veil {
+    from{
+        opacity: 0.9;
+    }
+    25%{
+        opacity: 0.9;
+    }
+    50%{
+        opacity: 0.9;
+    }
+    75%{
+        opacity: 0.7;
+    }
+    to{ 
+        opacity: 0;
+    }   
+}
+@keyframes defilement {
+    from{
+        transform: scale(0);
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes spinner {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes filling {
+    from{
+        color: $grey;
+    }
+    25%{
+        background-image: linear-gradient(to bottom, rgba(246,246,246,1) 75%, rgba(147,86,220,1) 25%); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;                             
+    }
+    50%{
+        background-image: linear-gradient(to bottom, rgba(246,246,246,1) 50%, rgba(147,86,220,1) 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    75%{
+        background-image: linear-gradient(to bottom, rgba(246,246,246,1) 25%, rgba(147,86,220,1) 75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    to{ 
+        color: $purple;
+    } 
+}

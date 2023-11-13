@@ -121,39 +121,50 @@ main {
   text-decoration: none;
 }
 .menu .menu__cat .menu__cat-content {
-  position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 12px;
   border: 1px solid #fff;
   background-color: #fff;
   border-radius: 15px;
-  padding: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  gap: 5px;
 }
 .menu .menu__cat .menu__cat-content .menu__cat-subtitle {
   font-size: 18px;
   font-weight: 500;
   color: #000;
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu .menu__cat .menu__cat-content .menu__cat-text {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
   color: #000;
   margin: 0;
-  display: flex;
-  justify-content: space-between;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu .menu__cat .menu__cat-content .euro {
   color: #353535;
   font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 15px;
+  padding-bottom: 15px;
 }
 .menu .menu__cat .menu__cat-content .menu__cat-visible {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  padding: 15px 0 15px 15px;
 }
 .menu .menu__cat .menu__cat-content .menu__order {
   display: flex;
@@ -161,11 +172,15 @@ main {
   align-items: center;
   width: 59px;
   background-color: #99E2D0;
-  margin: -15px;
+  margin-right: -59px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   color: #FFFFFF;
-  transition: transform 2s;
+  transition-duration: 0.5s;
+}
+.menu .menu__cat .menu__cat-content:hover > .menu__order {
+  margin-right: 0;
+  transition: all 0.8s;
 }
 .menu .entrees {
   transition: transform;
@@ -181,17 +196,6 @@ main {
   transition: transform;
   transform: scale(0);
   animation: onset 4s linear forwards 8s;
-}
-@keyframes onset {
-  from {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(0.5);
-  }
-  to {
-    transform: scale(1);
-  }
 }
 .menu .cta {
   display: flex;
@@ -209,8 +213,86 @@ main {
   border: none;
   color: #FFFFFF;
   box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.25);
+  opacity: 1;
+  transition: opacity 250ms;
+}
+.menu .cta__btn:hover {
+  box-shadow: 0px 4px 16px rgb(0, 0, 0);
+  opacity: 0.85;
+  cursor: pointer;
 }
 
+@keyframes onset {
+  from {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes veil {
+  from {
+    opacity: 0.9;
+  }
+  25% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes defilement {
+  from {
+    transform: scale(0);
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes filling {
+  from {
+    color: #F6F6F6;
+  }
+  25% {
+    background-image: linear-gradient(to bottom, rgb(246, 246, 246) 75%, rgb(147, 86, 220) 25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background-image: linear-gradient(to bottom, rgb(246, 246, 246) 50%, rgb(147, 86, 220) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    background-image: linear-gradient(to bottom, rgb(246, 246, 246) 25%, rgb(147, 86, 220) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  to {
+    color: #9356DC;
+  }
+}
 html {
   overflow-x: hidden;
 }
