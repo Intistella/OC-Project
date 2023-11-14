@@ -1,44 +1,32 @@
 $grey: #F6F6F6;
 $purple: #9356DC;
-@keyframes onset {
-    from{
-        transform: scale(0);
-    }
-    50%{
-        transform: scale(0.5);
-    }
-    to{
-        transform: scale(1);
-    }
-}
+
+/****Loader*****/
+
 @keyframes veil {
     from{
         opacity: 0.9;
+        width: 100%;
+        height: 100%;
     }
     25%{
         opacity: 0.9;
+        width: 100%;
+        height: 100%;
     }
     50%{
         opacity: 0.9;
+        width: 100%;
+        height: 100%;
     }
     75%{
         opacity: 0.7;
+        width: 100%;
+        height: 100%;
     }
     to{ 
         opacity: 0;
     }   
-}
-@keyframes defilement {
-    from{
-        transform: scale(0);
-        transform: rotate(-20deg);
-    }
-    50%{
-        transform: scale(0.5);
-    }
-    to{
-        transform: scale(1);
-    }
 }
 @keyframes spinner {
     from{
@@ -70,4 +58,20 @@ $purple: #9356DC;
     to{ 
         color: $purple;
     } 
+}
+
+/*****Menus*****/
+
+
+
+@keyframes onset {
+    from{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
 }

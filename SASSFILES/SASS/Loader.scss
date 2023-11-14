@@ -1,0 +1,36 @@
+$grey: #F6F6F6;
+$purple: #9356DC;
+
+.preloader{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: veil 4s both 1s;
+    .loader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        position: absolute;
+        top: 53%; left: 46%;
+        width: 100px;
+        height: 100px;
+        border: 10px solid #f3f3f3;
+        border-top: 10px solid $purple;
+        border-radius: 50%;
+        animation: spinner 2s linear infinite; 
+        animation-iteration-count: 2;  
+        .loader__inner{
+            font-size: 40px;
+            color: $grey;
+            animation: filling 4s linear;
+        }
+    }
+}
