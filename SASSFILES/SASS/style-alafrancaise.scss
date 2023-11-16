@@ -9,10 +9,10 @@ html{
 
 body{
     font-family: 'Roboto', Arial, sans-serif;
-    max-width: 767px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
     margin: 0;
     & a{
         text-decoration: none;
