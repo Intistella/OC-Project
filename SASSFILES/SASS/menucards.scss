@@ -16,7 +16,7 @@ main{
     border-top-left-radius: 35px;
     position: relative;
     top: -50px;
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 1025px){
         margin-right: 10%;
         margin-left: 10%;
         padding-left: 12%;
@@ -27,7 +27,7 @@ main{
         align-items: center;
         justify-content: space-between;
         margin: 0 17px 40px 17px;
-        @media screen and (min-width: 1024px){
+        @media screen and (min-width: 1025px){
             display: flex;
             justify-content: center;
             gap: 24px;
@@ -83,35 +83,37 @@ main{
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
             overflow: hidden;
             cursor: pointer; 
-            .menu__cat-subtitle{
-                font-size: 18px;
-                font-weight: 500;
-                color: #000;
-                margin: 0;
+            .menu__cat-visible{
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 10px 5px 10px 10px;
                 @include ellipse;
-            }
-            .menu__cat-text{
-                font-size: 14px;
-                font-weight: 300;
-                color: #000;
-                margin: 0;
-                @include ellipse;
+                .menu__cat-subtitle{
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #000;
+                    margin: 0;
+                    @include ellipse;
+                }
+                .menu__cat-text{
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #000;
+                    margin: 0;
+                    @include ellipse;
+                }
             }
             .euro{ 
-                width: fit-content;
+                width: 40px;
                 color: #353535;
                 font-weight: 700;
                 display: flex;
                 align-items: flex-end;
-                justify-content: flex-start;
-                padding-right: 10px;
+                justify-content: center;
                 padding-bottom: 10px;
-            }
-            .menu__cat-visible{
-                width: 90%;
-                display: flex;
-                flex-direction: column;
-                padding: 10px 5px 10px 10px;
+                padding-right: 10px;
+    
             }
             .menu__order{
                 display: flex;
@@ -134,17 +136,17 @@ main{
     .entrees{
         transition: transform;
         transform: scale(0);
-        animation: onset 4s linear forwards;
+        animation: onset 2s linear forwards;
     }
     .plats{
         transition: transform;
         transform: scale(0);
-        animation: onset 4s linear forwards 4s;
+        animation: onset 2s linear forwards 1s;
     }
     .desserts{
         transition: transform;
         transform: scale(0);
-        animation: onset 4s linear forwards 8s;
+        animation: onset 2s linear forwards 2s;
     }
     .cta{
         display: flex;

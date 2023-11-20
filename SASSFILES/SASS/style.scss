@@ -57,7 +57,7 @@ body{
     justify-content: center;
     background-color: $grey;
     padding-bottom: 57px;
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 1025px){
         padding-bottom: 30px;
     }
     &_title{
@@ -114,7 +114,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 68px;
-    @media screen and (min-width: 1024px) {  
+    @media screen and (min-width: 1025px) {  
         margin-bottom: 0;
         padding-top: 50px;
         padding-bottom: 50px;
@@ -128,7 +128,7 @@ body{
         height: 31px;
         margin: 48px 0 26px 0;
         padding-left: 17px;
-        @media screen and (min-width: 1024px){
+        @media screen and (min-width: 1025px){
             margin-top: 0;
         }
     }
@@ -136,7 +136,7 @@ body{
         display: flex;
         flex-direction: column;
         gap: 24px;
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 1025px) {
             flex-direction: row;
             justify-content: space-between;
             
@@ -155,7 +155,8 @@ body{
                 padding: 28px 38px 27px 34px; 
                 .fct_text{
                     font-size: 16px; 
-                    font-weight: 500;  
+                    font-weight: 500; 
+                    white-space: nowrap;
                 }
                 .grey_item{
                     color: #7E7E7E;
@@ -189,7 +190,7 @@ body{
     flex-direction: column;
     background-color: $grey;
     padding: 54px 18px 66px 17px;
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 1025px){
         padding-top: 30px;
         padding-right: 7%;
         padding-left: 5%;
@@ -203,7 +204,7 @@ body{
             text-align: start;
             margin-top: 0;
             margin-bottom: 0;
-            @media screen and (min-width: 1024px){
+            @media screen and (min-width: 1025px){
                 padding-left: 17px;
             }
         }
@@ -213,7 +214,7 @@ body{
             justify-content: space-between;
             gap: 18px;
             position: relative;
-            @media screen and (min-width: 1024px){
+            @media screen and (min-width: 1025px){
                 padding-left: 17px;
                 justify-content: flex-start;
                 display: grid;
@@ -222,7 +223,7 @@ body{
                 grid-template-rows: 44% 44%;
                 row-gap: 50px;
             }
-                .card__tag{
+                .card__tag__1, .card__tag__2{
                 font-size: 14px;
                 font-weight: 500;
                 color: #008766;
@@ -234,12 +235,17 @@ body{
                 position: absolute;
                 right: 15px; 
                 margin-top: 15px;
-                @media screen and (min-width: 1024px){
-                    margin-top: 0;
-                    top: 15px;
-                    right: 15px;
-                }
-                }   
+                }  
+                .card__tag__1{
+                    @media screen and (min-width: 1025px){
+                    right: 53.6%;
+                    }
+                } 
+                .card__tag__2{
+                    @media screen and (min-width: 1025px){
+                    right: 1.5%;
+                    }
+                } 
                 .card{
                     display: flex;
                     flex-direction: row;
@@ -257,7 +263,7 @@ body{
                             object-fit: cover;
                             border-top-right-radius: 15px;
                             border-top-left-radius: 15px;
-                            @media screen and (min-width: 1024px){
+                            @media screen and (min-width: 1025px){
                                 height: 166px;
                             }
                         }
@@ -322,7 +328,7 @@ footer{
     .footer__section{
         padding: 22px 25px;
         background-color: #353535;
-        @media screen and (min-width: 1024px){
+        @media screen and (min-width: 1025px){
             display: flex;
             flex-direction: row-reverse;
             gap: 16px;
@@ -334,7 +340,7 @@ footer{
             width: 100px;
             height: 27px;
             margin-bottom: 16px;
-            @media screen and (min-width: 1024px){
+            @media screen and (min-width: 1025px){
                 margin-bottom: 0;
             }
         }
@@ -344,8 +350,8 @@ footer{
             flex-direction: column;
             gap: 7px;
             color: #FFFFFF;  
-            @media screen and (min-width: 1024px){
-                width: 50%;
+            @media screen and (min-width: 1025px){
+                width: 600px;
                 flex-direction: row;
                 justify-content: space-between;
             }
@@ -360,7 +366,8 @@ footer{
             .footer__text{
                 font-size: 16px;
                 font-weight: 500;
-                padding-right: 20px;
+                padding-right: 5px;
+                white-space: nowrap;
             }
         }       
     }
