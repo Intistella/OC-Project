@@ -31,7 +31,7 @@
 .preloader .loader .loader__inner {
   font-size: 40px;
   color: #F6F6F6;
-  animation: filling 4s linear;
+  animation: filling 4s linear forwards;
 }
 
 /****Loader*****/
@@ -73,22 +73,24 @@
     color: #F6F6F6;
   }
   25% {
-    background-image: linear-gradient(to bottom, rgb(246, 246, 246) 75%, rgb(147, 86, 220) 25%);
+    background-image: linear-gradient(to bottom, rgb(246, 246, 246) 70%, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100% 30%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   50% {
-    background-image: linear-gradient(to bottom, rgb(246, 246, 246) 50%, rgb(147, 86, 220) 50%);
+    background-image: linear-gradient(to bottom, rgb(246, 246, 246) 50%, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100% 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   75% {
-    background-image: linear-gradient(to bottom, rgb(246, 246, 246) 25%, rgb(147, 86, 220) 75%);
+    background-image: linear-gradient(to bottom, rgb(246, 246, 246) 25%, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100% 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   to {
-    color: #9356DC;
+    background-image: linear-gradient(to bottom, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 /*****Menus*****/
@@ -413,12 +415,7 @@ body {
   -webkit-text-stroke-color: #000;
 }
 .resto_cards .card .card__content .cardtitle__section .fa-heart:hover {
-  background-image: linear-gradient(to bottom, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
-  -webkit-text-stroke-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  animation: filling 0.6s linear forwards;
 }
 .resto_cards .card .card__content .card__text {
   font-size: 17px;

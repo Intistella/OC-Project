@@ -30,7 +30,7 @@ $purple: #9356DC;
         .loader__inner{
             font-size: 40px;
             color: $grey;
-            animation: filling 4s linear;
+            animation: filling 4s linear forwards;
         }
     }
 }

@@ -51,12 +51,7 @@ main {
   -webkit-text-stroke-color: #000;
 }
 .menu .menu__name .fa-heart:hover {
-  background-image: linear-gradient(to bottom, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
-  -webkit-text-stroke-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  animation: filling 0.6s linear forwards;
 }
 .menu .menu__cat {
   margin: 0 13px 40px 13px;
